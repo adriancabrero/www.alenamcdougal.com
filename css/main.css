@@ -1,0 +1,706 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+	height: 100%;
+	
+}
+
+strong {font-family:'GMedium', sans-serif;}	
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+	background-color:#e6e6e6;
+	color:#000;
+	text-align:center;
+	font-size: 20px;
+	font-family:'GLight', sans-serif;
+	height: 100%;
+	
+}
+
+			#wrapper{
+				margin: 0 auto;
+				min-height: 100%;
+				position:relative;
+				-webkit-transition: all 0.5s linear;
+			}
+			
+			
+			
+			/* navigation */
+			
+		
+			
+		
+		
+		
+			.menu{
+				position: absolute;
+				height: auto;
+				top: 563px;
+				z-index: 900;
+				left: 50%;
+				margin-left: -245px; /* (width + padding)/2 */
+			}
+			
+			.menu ul{
+				
+			}
+		
+			.menu.fixed{
+				position: fixed;
+				top: 0px;
+			}
+			
+			.menu li {
+				line-height: 0px;
+   				width:auto;
+   				height:40px;
+				float:left;
+   				padding:20px 20px;
+				margin:20px 10px;
+   				text-align:center;
+   				border: 1px solid #000;
+   				color:rgba(0, 0, 0, 1);
+   				background: rgba(255, 255, 255, .3);
+   				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   				-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   				box-sizing: border-box;	         /* Opera/IE 8+ */
+   				transition: all .4s linear;
+   				-webkit-transition: all .4s linear;
+   				-moz-transition: all .4s linear;
+   				-o-transition: all .4s linear;
+   				font-family:'GLight', sans-serif;
+				cursor:pointer;
+			}
+		
+				.menu .active{
+					color:rgba(255, 255, 255, 1);
+					background: rgba(0, 0, 0, 1);
+				}
+			
+				.menu li:hover{
+					color:rgba(255, 255, 255, 1);
+					background: rgba(0, 0, 0, 1);
+				}
+		
+			.menu-bar{
+				display: none;
+			}
+		
+		
+			
+			/* Section Styles */
+			section{
+				margin: 0 auto;
+				margin-top:0;
+				padding-top:0;
+				float:left;
+				clear:both;
+				width:100%;
+				min-width:100%;
+				overflow:hidden;
+				z-index:500;
+				display:block;
+			}
+			
+			/* Content Styles */
+			.content{
+				max-width:1000px;
+				margin: 0 auto;
+				margin-top:0;
+				padding-top:0;
+				overflow:hidden;
+				display:block;
+				z-index: 800;
+			}
+			
+			
+			/* Reel Styles */
+			#reel{
+				
+			}
+				#reel section{
+					margin-bottom:40px;
+					background-color:#000;
+				}
+					#reel .content{
+					}
+					
+					
+					
+					
+			/* Work Styles */
+			#work{
+				position: relative;
+			}
+				#work section{
+					background-color:#e6e6e6;
+					position: relative;
+					padding-top:35px;
+					padding-bottom:30px;
+					margin-bottom:40px;
+				}
+					#work .content{
+						margin-top:0;
+						margin-bottom:0;
+						max-width:1400px;
+						position: relative;
+						
+					}					
+			
+					#work .thumb{
+						width:280px;
+						height:158px;
+						display:inline-block;
+						margin:10px;
+						background:#000;
+						position:relative;
+						overflow: hidden;
+						cursor:pointer;
+					}
+					
+						#work .thumb a img{
+							position:relative;
+						}
+					
+					#work .content a div{
+						position: absolute;
+						background: #000;
+						background: rgba(0,0,0,0.8);
+						width: 100%;
+						height: 100%;
+					}
+					
+					#work .content a span {
+						display: block;
+						padding: 10px 0;
+						margin: 40px 20px 20px 20px;
+						text-transform: uppercase;
+						font-weight: normal;
+						color: rgba(255,255,255,0.9);
+						font-size:16px;
+					}
+					
+					#work p.vendor {
+						padding: 10px 0;
+						font-weight: normal;
+						color: rgba(255,255,255,0.9);
+						font-size:12px;
+					}
+					
+					
+			
+			
+			
+			
+			
+			
+			/* About Styles */
+			#about{
+				position: relative;
+			}
+				#about section{
+					background-color:#fff;
+					padding-top:40px;
+					padding-bottom:30px;
+					margin-bottom:40px;
+				}
+					#about .content{
+						z-index: 805;
+						margin-top:0;
+						margin-bottom:0;
+					}					
+					
+						#about section .content .header{
+							position:relative;
+							display:block;
+							margin-top:62px;
+						}
+						
+							#about section .content .header img{
+								width:238px;
+								height:238px;
+								display: inline-block;
+								margin-right:20px;
+								vertical-align: top;
+								
+							}
+					
+							#about section .content .header p{
+								font-size:35px;
+								width:260px;
+								line-height:43px;
+								display: inline-block;
+								margin-left:20px;
+								margin-top: 35px;
+								
+							}
+							
+							
+						
+						#about section .content .bio{
+							margin:0 auto;
+							max-width:675px;
+							margin-top:50px;
+							margin-bottom:40px;
+							line-height:35px;
+						
+						}	
+							
+					
+					#about section .content .logos{
+						margin:0 auto;
+						padding: 60px 0;
+					}	
+			
+					#about a {
+						text-decoration:none;
+					}
+			
+			
+			
+			/* Contact Styles */
+			#contact{
+				text-align:center;
+				display:block;
+				padding-top:35px;
+				padding-bottom:30px;
+				margin-bottom:40px;
+			}
+			
+				#contact section{
+					background-color:#e6e6e6;
+
+				}
+						#contact .content{
+							position:relative;
+							padding:50px 0;
+							margin-top:0;
+							margin-bottom:0;
+							
+						}
+						
+						.available{
+							display:block;
+							margin-bottom:20px;
+							line-height:30px;
+							font-size:22px;
+						}
+						
+						.links-holder{
+							position:relative;
+							margin:0 auto;
+							max-width:900px;
+						}
+						
+							.links-holder span{
+								display:inline-block;
+								
+								margin: 0px 20px;
+							}
+							
+							.links-holder span img{
+								margin: 0 10px 2px 0px;
+							}
+			
+							#contact .content a{
+								color:#000;
+								text-decoration:none;
+								}
+					
+								#contact .content a:hover{
+									color:#000;
+									text-decoration:underline;
+									}
+									
+					   .social{
+						   display:block;
+						   clear:both;
+						   margin: 0 auto;
+						   padding: 30px 0;
+						   
+					   }
+	
+	
+			
+		   			.btn{
+		   				width:auto;
+		   				height:auto;
+		   				padding:10px 20px;
+		   				text-align:center;
+		   				border: 1px solid #000;
+		   				color:rgba(0, 0, 0, 1);
+		   				background: rgba(0, 0, 0, 0);
+		   				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		   				-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		   				box-sizing: border-box;	         /* Opera/IE 8+ */
+				
+		   				transition: all .4s linear;
+		   				-webkit-transition: all .4s linear;
+		   				-moz-transition: all .4s linear;
+		   				-o-transition: all .4s linear;
+		   				font-family:'GLight', sans-serif;
+		   			}
+			
+		   				.btn:hover{
+		   					color:rgba(255, 255, 255, 1);
+		   					background: rgba(0, 0, 0, 1);
+		   				}
+			
+	
+	.glight{font-family:'GLight', sans-serif;}	
+	.gmed{font-family:'GMedium', sans-serif;}	
+	.gbook{font-family:'GBook', sans-serif;}
+	.gbold{font-family:'GBold', sans-serif;}	
+	
+	.adriancabrero{
+		display:block;
+		position:fixed;
+		bottom:10px;
+		right:10px;
+		font-size:10px;
+		color:#898989;
+		text-decoration:none;
+		font-family:'GMedium', sans-serif;
+		transition: all .4s linear;
+		-webkit-transition: all .4s linear;
+		-moz-transition: all .4s linear;
+		-o-transition: all .4s linear;
+	}
+	
+	.adriancabrero:hover{
+		color:#000;
+	}
+			
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'GBold';
+    src: url('../media/font/g-bold.otf-webfont.eot');
+    src: url('../media/font/g-bold.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/g-bold.otf-webfont.woff') format('woff'),
+         url('../media/font/g-bold.otf-webfont.ttf') format('truetype'),
+         url('../media/font/g-bold.otf-webfont.svg#GBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GBook';
+    src: url('../media/font/g-book.otf-webfont.eot');
+    src: url('../media/font/g-book.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/g-book.otf-webfont.woff') format('woff'),
+         url('../media/font/g-book.otf-webfont.ttf') format('truetype'),
+         url('../media/font/g-book.otf-webfont.svg#GBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GLight';
+    src: url('../media/font/g-light.otf-webfont.eot');
+    src: url('../media/font/g-light.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/g-light.otf-webfont.woff') format('woff'),
+         url('../media/font/g-light.otf-webfont.ttf') format('truetype'),
+         url('../media/font/g-light.otf-webfont.svg#GLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GMedium';
+    src: url('../media/font/g-medium.otf-webfont.eot');
+    src: url('../media/font/g-medium.otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/font/g-medium.otf-webfont.woff') format('woff'),
+         url('../media/font/g-medium.otf-webfont.ttf') format('truetype'),
+         url('../media/font/g-medium.otf-webfont.svg#GMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
